@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#progress-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.progress-item {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.progress-item.completed {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.progress-item.current {
+  border: 2px solid #000;
+}
+
+#question-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.question {
+  display: none;
+}
+
+.question.active {
+  display: block;
+}
+
+.options label {
+  display: block;
+  margin: 10px 0;
+}
+
+#finish-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: green;
+}
